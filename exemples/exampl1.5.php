@@ -11,4 +11,3 @@ Your Name: <input type="text" name="user"/>
 _HTML_;
 
 }
-?>
