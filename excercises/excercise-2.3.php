@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
+<?php
 $cost_hamburger = 4.95;
 $cost_milk_shake = 1.95;
 $cost_coca_cola = 0.85;
@@ -22,12 +22,13 @@ $tip = $order_price * $tip_cost;
 $all_cost = $order_price + $tax + $tip;
 
 printf("<pre><p>%d x $%.2f hamburger    = $%.2f<p></pre>", 2, $cost_hamburger, $cost_hamburger * 2);
-printf("<pre><p>%d x $%.2f milkshake    = $%.2f<p></pre>", 1, $cost_milk_shake, $cost_hamburger);
+printf("<pre><p>%d x $%.2f milkshake    = $%.2f<p></pre>", 1, $cost_milk_shake, $cost_milk_shake);
 printf("<pre><p>%d x $%.2f coca-cola    = $%.2f<p></pre>", 1, $cost_coca_cola, $cost_coca_cola);
 printf("<pre><p>Your check price       = $%.2f<p></pre>", $all_cost);
 printf('<pre><p>------------------------------<p>');
-printf("<pre><p>Your order without tax = $%.2f<p></pre>", $all_cost);
-
+printf("<pre><p>Your order without tax = $%.2f<p></pre>", $order_price);
+printf("<pre><p>Your order without tip = $%.2f<p></pre>", $order_price + $tax);
+printf("<pre><p>Your price to pay      = $%.2f<p></pre>", $all_cost);
 ?>
 </body>
 </html>
